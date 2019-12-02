@@ -58,9 +58,9 @@ print(f3(8))     # Should print 9
 
 # YOUR CODE HERE
 
-def f4(**args):
-    for key, value in args.items():
-        print("key:", key, "value:", value)
+def f4(**kwargs):
+    for key, value in kwargs.items():
+        print("key:", key + ",", "value:", value)
    
 f4(foo="bar", baz=12)    
 
@@ -81,4 +81,4 @@ d = {
 }
 
 # What thing do you have to add to make this work?
-f4(*d)
+f4(**d)
