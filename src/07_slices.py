@@ -25,14 +25,14 @@ print("Last Three: ", a[3:])
 print("Two Middle: ", a[2:4])
 
 # Output every element except the first one: [4, 1, 7, 9, 6]
-print()
+print("All but first: ", a[1:])
 
 # Output every element except the last one: [2, 4, 1, 7, 9]
-print()
+print("All but last: ", a[:len(a)-1])
 
 # For string s...
 
 s = "Hello, world!"
 
 # Output just the 8th-12th characters: "world"
-print()
+print("world output:", s[7:12])
