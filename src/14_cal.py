@@ -22,3 +22,16 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+date = input("Enter a month and year separated by a comma: ").split(",")
+today = datetime.today()
+
+if date[0] == '':
+    print(calendar.month(today.year, today.month))
+elif len(date) == 1:
+    print(calendar.month(today.year, int(date[0])))
+elif len(date) == 2:
+    print(calendar.month(int(date[1]), int(date[0])))
+else:
+    print("Example format should be month and year: 12, 2019")
+    exit()
